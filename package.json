@@ -1,0 +1,39 @@
+{
+  "name": "node-express-template",
+  "version": "1.0.0",
+  "description": "My Node express project template",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node build/server.js",
+    "build": "cross-env babel ./src --out-dir ./build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iAmao/node-express-template.git"
+  },
+  "keywords": [],
+  "author": "Inumidun Amao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iAmao/node-express-template/issues"
+  },
+  "homepage": "https://github.com/iAmao/node-express-template#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cross-env": "^5.1.4",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "module-alias": "^2.0.6",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0"
+  },
+  "_moduleAliases": {
+    "@": "build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
